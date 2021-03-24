@@ -30,7 +30,7 @@ class Product with ChangeNotifier {
     isFavorite = !isFavorite;
     notifyListeners();
 
-    final url = 'https://shop-e66d0.firebaseio.com/userFavorites/$userId/$id.json?auth=$token';
+    final url = 'backendDatabaseUrl/userFavorites/$userId/$id.json?auth=$token';
     try {
       final res = await http.put(url, body: json.encode(isFavorite));
       if (res.statusCode >= 400) {

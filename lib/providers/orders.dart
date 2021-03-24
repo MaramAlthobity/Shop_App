@@ -37,7 +37,7 @@ class Orders with ChangeNotifier {
 
   Future<void> fetchAndSetOrders() async {
     final url =
-        'https://shop-e66d0.firebaseio.com/orders/$userId.json?auth=$authToken';
+        'backendDatabaseUrl/orders/$userId.json?auth=$authToken';
 
     try {
       final res = await http.get(url);
@@ -73,7 +73,7 @@ class Orders with ChangeNotifier {
 
   Future<void> addOrder(List<CartItem> cartProduct, double total) async {
     final url =
-        'https://shop-e66d0.firebaseio.com/orders/$userId.json?auth=$authToken';
+        'backendDatabaseUrl/orders/$userId.json?auth=$authToken';
     try {
       final timestamp = DateTime.now();
       final res = await http.post(url,
