@@ -1,5 +1,4 @@
 import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/auth.dart';
@@ -19,8 +18,8 @@ class AuthScreen extends StatelessWidget {
             decoration: BoxDecoration(
               gradient: LinearGradient(
                 colors: [
-                  Color.fromRGBO(215, 117, 255, 1).withOpacity(0.5),
-                  Color.fromRGBO(255, 188, 117, 1).withOpacity(0.9),
+                  Color.fromRGBO(0, 255, 0, 1).withOpacity(0.5),
+                  Color.fromRGBO(0, 0, 255, 1).withOpacity(0.9),
                 ],
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
@@ -45,7 +44,7 @@ class AuthScreen extends StatelessWidget {
                         ..translate(-10.0),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
-                        color: Colors.deepOrange.shade900,
+                        color: Colors.red.shade900,
                         boxShadow: [
                           BoxShadow(
                             blurRadius: 8,
@@ -55,7 +54,7 @@ class AuthScreen extends StatelessWidget {
                         ],
                       ),
                       child: Text(
-                        "My Shop",
+                        "Shop",
                         style: TextStyle(
                           color:
                           Theme.of(context).accentTextTheme.headline6.color,

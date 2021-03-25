@@ -2,7 +2,6 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import '../providers/cart.dart';
-//import 'package:real_shop/providers/cart.dart';
 import 'package:http/http.dart' as http;
 
 class OrderItem {
@@ -37,7 +36,7 @@ class Orders with ChangeNotifier {
 
   Future<void> fetchAndSetOrders() async {
     final url =
-        'backendDatabaseUrl/orders/$userId.json?auth=$authToken';
+        'https://shop-1e448-default-rtdb.firebaseio.com/orders/$userId.json?auth=$authToken';
 
     try {
       final res = await http.get(url);
@@ -73,7 +72,7 @@ class Orders with ChangeNotifier {
 
   Future<void> addOrder(List<CartItem> cartProduct, double total) async {
     final url =
-        'backendDatabaseUrl/orders/$userId.json?auth=$authToken';
+        'https://shop-1e448-default-rtdb.firebaseio.com/orders/$userId.json?auth=$authToken';
     try {
       final timestamp = DateTime.now();
       final res = await http.post(url,

@@ -1,16 +1,27 @@
-# shop_app
+# Slop Application
+It created using flutter with firebase.
+## It contains 6 screens
+1. Authentication screen.
+2. Shop screen
+3. cart screen
+4. favorite screen
+5. Order Screen
+6. Manage Products
 
-A new Flutter project.
+## Login Screen
 
-## Getting Started
+![login](https://user-images.githubusercontent.com/56017399/112405310-1758cf00-8d23-11eb-9a8c-36de83a8f996.jpg)
 
-This project is a starting point for a Flutter application.
+## SignUp Screen
 
-A few resources to get you started if this is your first Flutter project:
+![SignUp](https://user-images.githubusercontent.com/56017399/112405314-1889fc00-8d23-11eb-856d-6f08251e2830.jpg)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## Shop Screen
+![Shop](https://user-images.githubusercontent.com/56017399/112405311-17f16580-8d23-11eb-891e-32a2123be4df.jpg)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Cart Screen
+![cart](https://user-images.githubusercontent.com/56017399/112405316-1889fc00-8d23-11eb-84ad-d5ac178af2f3.jpg)
+
+## Drawer
+
+![drawer](https://user-images.githubusercontent.com/56017399/112405307-1627a200-8d23-11eb-8ac2-ea38b7a5ae9f.jpg)
