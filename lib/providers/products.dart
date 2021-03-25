@@ -75,7 +75,7 @@ class Products with ChangeNotifier {
       if (extractedData == null) {
         return;
       }
-      //final url = 'https://identitytoolkit.googleapis.com/v1/accounts:$urlSegment?key=AIzaSyBGrT9eh5_vmr3i86TcnY4tX6GHBZZgFDE';
+
       url = 'YourOwnURL';
 
       final favRes = await http.get(url);
@@ -148,7 +148,7 @@ class Products with ChangeNotifier {
 
   Future<void> deleteProduct(String id) async {
     final url =
-        'https://shop-1e448-default-rtdb.firebaseio.com/products/$id.json?auth=$authToken';
+        'YourOwnURL';
     final existingproductIndex = _items.indexWhere((prod) => prod.id == id);
     var existingproduct = _items[existingproductIndex];
     _items.removeAt(existingproductIndex);
