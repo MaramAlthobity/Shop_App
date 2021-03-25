@@ -67,7 +67,7 @@ class Products with ChangeNotifier {
     final filterString =
     filterByUser ? 'orderBy="creatorId"&equalTo="$userId"' : '';
 
-    var url = 'https://shop-1e448-default-rtdb.firebaseio.com/products.json?auth=$authToken&$filterString';
+    var url = 'YourOwnURL';
 
     try {
       final res = await http.get(url);
@@ -76,7 +76,7 @@ class Products with ChangeNotifier {
         return;
       }
       //final url = 'https://identitytoolkit.googleapis.com/v1/accounts:$urlSegment?key=AIzaSyBGrT9eh5_vmr3i86TcnY4tX6GHBZZgFDE';
-      url = 'https://shop-1e448-default-rtdb.firebaseio.com/userFavorites/$userId.json?auth=$authToken';
+      url = 'YourOwnURL';
 
       final favRes = await http.get(url);
       final favData = json.decode(favRes.body);
@@ -103,7 +103,7 @@ class Products with ChangeNotifier {
 
   Future<void> addProduct(Product product) async {
     final url =
-        'https://shop-1e448-default-rtdb.firebaseio.com/products.json?auth=$authToken';
+        'YourOwnURL';
     try {
       final res = await http.post(url,
           body: json.encode({
@@ -131,7 +131,7 @@ class Products with ChangeNotifier {
     final prodIndex = _items.indexWhere((prod) => prod.id == id);
     if (prodIndex >= 0) {
       final url =
-          'https://shop-1e448-default-rtdb.firebaseio.com/products/$id.json?auth=$authToken';
+          'YourOwnURL';
       await http.patch(url,
           body: json.encode({
             'title': newProduct.title,
