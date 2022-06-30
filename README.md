@@ -1,4 +1,4 @@
-# Slop Application
+# Shop Application
 It created using flutter with firebase.
 ## It contains 6 screens
 1. Authentication screen.
